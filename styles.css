@@ -233,3 +233,42 @@ transition: 0.3s ease;
 #readMoreBtn:hover {
 background-color: #4a8ef0;
 }
+
+/* --- Team Page Grid --- */
+.team-grid {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 60px;
+padding: 60px 20px;
+flex-wrap: wrap;
+}
+
+
+.team-member {
+text-align: center;
+width: 180px;
+}
+
+
+.team-member img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 10px;
+border: 2px solid #1a73e8;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.team-member img:hover {
+transform: scale(1.05);
+box-shadow: 0px 0px 10px #1a73e8;
+}
+
+
+.team-member h3 {
+margin-top: 12px;
+font-size: 1.1rem;
+text-align: center;
+}
