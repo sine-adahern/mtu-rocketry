@@ -1,7 +1,7 @@
 /* Global settings */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Unispace-Bold, Unispace, sans-serif;
     background: black;
     color: white;
 }
@@ -52,7 +52,7 @@ main {
 .navbar {
 width: 100%;
 background-color: black;
-padding: 15px 0;
+padding: 30px 0;
 position: sticky;
 top: 0;
 z-index: 1000;
@@ -62,10 +62,26 @@ z-index: 1000;
 .nav-links {
 list-style: none;
 display: flex;
-justify-content: center;
-gap: 30px;
+justify-content: flex-start;
+gap: 60px;
 margin: 0;
 padding: 0;
+padding-left: 40px;
+}
+
+.nav-links li {
+position: relative;
+}
+
+.nav-links li:not(:last-child)::after {
+content: "";
+display: inline-block;
+width: 2px;
+height: 24px;
+background: #ffffff;
+opacity: 0.7;
+margin-left: 30px;
+vertical-align: middle;
 }
 
 
